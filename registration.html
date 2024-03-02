@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Registration</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <!-- <li><a href="departments.html">Departments</a></li> -->
+                <li><a href="timetables.html">Timetables</a></li>
+                <li><a href="payments.html">Payments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Student Registration Form</h2>
+
+            <form action="submit.php" method="post" enctype="multipart/form-data">
+                <label for="studentNumber">Student Number:</label><br>
+                <input type="text" id="studentNumber" name="studentNumber" required><br>
+                <p>
+                    Upload a picture of you
+                    <input type="file" id="fileInput" name="fileInput" />
+                    <!-- <button type="button" onclick="chooseFile()" class="choose-file-button">Choose File</button> -->
+                    <!-- <script>
+                        function chooseFile() {
+                            document.getElementById('fileInput').click();
+                        }
+                    </script> -->
+                </p>
+                
+
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" required><br>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" required><br>
+                <label for="dateOfBirth">Date of Birth:</label><br>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required><br>
+                <label for="faculty">Faculty:</label><br>
+                <input type="text" id="faculty" name="faculty" required><br>
+                <label for="department">Department:</label><br>
+                <input type="text" id="department" name="department" required><br>
+
+                <label>Email</label><br>
+                <input type="text" id="Email" name="Email" required><br>
+
+                <fieldset>
+                    <!-- <legend>Personal Information</legend> -->
+                    <label for="gender">Gender:</label>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                
+                </fieldset>
+                    
+                <button class="submitButton" href="#">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kumasi Technical Universty, All rights reserved.</p>
+    </footer>
+</body>
+</html>
